@@ -15,4 +15,6 @@ object Utils {
         val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
         return sdf.format(Date())
     }
+
+    fun encodeImage(imageLink: String): String = ""
 }

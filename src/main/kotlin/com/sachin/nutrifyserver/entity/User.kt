@@ -11,9 +11,11 @@ import jakarta.persistence.Id
 @Entity
 data class User(
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id") val userId: String,
     @Column(name = "phone") var phone: String,
+
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id") val userId: String? = null,
+
     @Column(name = "email") var email: String,
     @Column(name = "name") var name: String,
     @Column(name = "password") var password: String,

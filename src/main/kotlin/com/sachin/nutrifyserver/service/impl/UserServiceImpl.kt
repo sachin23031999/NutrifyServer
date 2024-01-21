@@ -44,7 +44,7 @@ class UserServiceImpl @Autowired constructor(
     override fun updateUser(user: User): Boolean {
         try {
             userRepository.apply {
-                return if (existsById(user.userId)) {
+                return if (existsById(user.phone)) {
                     save(user)
                     true
                 } else {
@@ -56,6 +56,9 @@ class UserServiceImpl @Autowired constructor(
         }
     }
 
+    override fun patchUser(vararg fields: String): Boolean {
+        TODO("not yet implemented")
+    }
     override fun deleteUser(userId: String) {
         userRepository.deleteById(userId)
     }

@@ -12,6 +12,8 @@ interface UserService {
     fun getAllUser(): List<User>?
 
     fun updateUser(user: User): Boolean
+
+    fun patchUser(vararg fields: String): Boolean
     fun deleteUser(userId: String)
 
     fun archiveUser(userId: String): Boolean

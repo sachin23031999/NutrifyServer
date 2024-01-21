@@ -1,8 +1,9 @@
-package com.sachin.nutrifyserver.service
+package com.sachin.nutrifyserver.service.impl
 
 import com.sachin.nutrifyserver.model.AccountStatus
-import com.sachin.nutrifyserver.model.User
+import com.sachin.nutrifyserver.entity.User
 import com.sachin.nutrifyserver.repository.UserRepository
+import com.sachin.nutrifyserver.service.UserService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

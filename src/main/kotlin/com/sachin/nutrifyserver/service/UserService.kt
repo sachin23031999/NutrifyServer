@@ -1,6 +1,6 @@
 package com.sachin.nutrifyserver.service
 
-import com.sachin.nutrifyserver.model.User
+import com.sachin.nutrifyserver.entity.User
 
 interface UserService {
 
